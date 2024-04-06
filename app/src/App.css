@@ -1,0 +1,263 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+header button.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap size to your liking */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 200px; /* Adjust the card size to your liking */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ProductCard Styles */
+.product-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.cart-view {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  gap: 20px; /* Adjust the space between items */
+  padding-bottom: 80px; /* Add padding to account for the sticky footer */
+  /* Rest of your styles */
+}
+.cart-view .product-card {
+  flex: 0 1 calc(33.333% - 20px); /* Adjust the percentage based on how many items per row */
+  /* Rest of your styles for product-card within cart view */
+}
+
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #f8f8f8;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card .price {
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  color: #000; /* Adjust the text color as needed */
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust padding to your preference */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Adjust font size to your preference */
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* Optional: for hover effect */
+}
+
+.transparent-button:hover {
+  background-color: #ddd; /* Color when mouse hovers over the button */
+  color: black;
+}
+
+
+/* Adjust the logo and search input */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  height: 250px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.search-and-cart {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+/* Style for category navigation */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust space between buttons */
+  padding: 10px 0;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.transparent-button:hover {
+  background-color: #f0f0f0; /* Change as needed */
+}
+
+.transparent-button.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer; /* Indicates the logo is clickable */
+}
+
+.logo:hover {
+  opacity: 0.7; /* Makes the logo slightly transparent on hover */
+}
+
+.shopping-bag {
+    position: relative;
+}
+
+.shopping-bag img {
+  height:30px; /* Adjust based on your search bar's height */
+}
+
+.shopping-bag-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.shopping-bag {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer style */
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear-cart {
+    margin-left: 60px;
+}
+
+.total-price {
+  text-align: right;
+  padding-right: 60px; /* Or according to your design */
+  font-size: 20px; /* Or the size you prefer for the total amount */
+}
+
+.total-amount {
+  font-weight: bold;
+}
+
+.tax-note {
+  display: block; /* makes it appear on the next line */
+  font-size: 10px; /* smaller font size for the note */
+  margin-top: 4px; /* space between the total amount and the note */
+}
+
+.cart-view-header {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  /* Any other styles you want for the header */
+}
