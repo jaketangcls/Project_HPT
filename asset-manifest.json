@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Project_HPT/static/css/main.2a651eb1.css",
+    "main.js": "/Project_HPT/static/js/main.c804204a.js",
+    "static/js/453.8460c1fb.chunk.js": "/Project_HPT/static/js/453.8460c1fb.chunk.js",
+    "static/media/shop.png": "/Project_HPT/static/media/shop.c1f48c3002e7f41443f5.png",
+    "index.html": "/Project_HPT/index.html",
+    "main.2a651eb1.css.map": "/Project_HPT/static/css/main.2a651eb1.css.map",
+    "main.c804204a.js.map": "/Project_HPT/static/js/main.c804204a.js.map",
+    "453.8460c1fb.chunk.js.map": "/Project_HPT/static/js/453.8460c1fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a651eb1.css",
+    "static/js/main.c804204a.js"
+  ]
+}
